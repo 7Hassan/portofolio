@@ -1,0 +1,13 @@
+.vertical-timeline-element--work {
+
+  overflow: unset;
+
+  .vertical-timeline-element-content {
+    overflow: unset;
+
+    .date {
+      color: red;
+      opacity: .85;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+$mainColor: #15023a;
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content
+  }
+}
+
+h1.head-sec {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}

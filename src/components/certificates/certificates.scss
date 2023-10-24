@@ -1,0 +1,74 @@
+.certificates {
+  height: 100vh;
+  padding: 0 10px;
+
+  .info {
+    margin: auto;
+    font-size: 20px;
+    color: #656C73;
+    letter-spacing: 1.1px;
+
+    .title {
+      max-width: 800px;
+
+      margin: 0 auto 30px;
+
+      h2 {
+        font-size: 25px;
+        color: red;
+        margin-bottom: 10px;
+      }
+    }
+
+    .imgs-container {
+      $maxWidth: 600px;
+      $width: 120px;
+      // $height: calc($width - 30px);
+      margin: auto;
+      position: relative;
+      max-width: calc($maxWidth + $width + 20px);
+      height: 60vh;
+      padding: 50px;
+
+      #slide {
+        .item {
+          width: $width;
+          background-position: 50% 50%;
+          display: inline-block;
+          transition: .5s;
+          background-size: cover;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: calc(100% - $width);
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: white;
+
+          &.show {
+            transform: translate(0, 0);
+            border-radius: 0;
+            width: calc(100% - $width);
+            max-width: $maxWidth;
+            left: 0;
+            box-shadow: none;
+          }
+
+          $ConstSpace: .4 * $width;
+
+          @mixin set-top($index) {
+            $space: $ConstSpace * ($index - 6);
+            top: calc(50% + $space);
+          }
+
+          @for $i from 1 through 10 {
+            &:nth-child(#{$i}):not(.show) {
+              @include set-top($i);
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
