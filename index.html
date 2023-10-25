@@ -13,14 +13,52 @@
       margin: 0;
       overflow-x: hidden;
     }
+
+    .hello,
+    .loading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .hello video {
+      max-width: 500px;
+    }
+
+    .hidden {
+      display: none;
+    }
   </style>
   <title>Hassan Hossam</title>
 </head>
 
-
 <body>
-  <div id="root"></div>
+  <div class="loading" id="loading">
+    <img src="/src/assets/icons/loading.svg" alt="">
+  </div>
+  <div class="hello hidden" id="bm">
+    <video autoplay muted
+      src="https://firebasestorage.googleapis.com/v0/b/portfolio-ae31d.appspot.com/o/Icons%2Fhello.mov?alt=media&token=f3b3b39a-d159-4a5d-b949-283f0ec18c9d&_gl=1*1s0tq5u*_ga*Njk0MTExMjMzLjE2OTc4MzQzODA.*_ga_CW55HF8NVT*MTY5ODI1MTgwMy44LjEuMTY5ODI1MTg1NS44LjAuMA."></video>
+  </div>
+  <div id="root" class="hidden"></div>
+
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    const root = document.getElementById('root');
+    const bm = document.getElementById('bm');
+    const loading = document.getElementById('loading');
+    window.addEventListener('load', () => {
+      loading.classList.add('hidden');
+      bm.classList.remove('hidden');
+      setTimeout(() => {
+        bm.classList.add('hidden');
+        root.classList.remove('hidden');
+      }, 2500)
+    });
+  </script>
 </body>
 
 </html>

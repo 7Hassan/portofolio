@@ -1,5 +1,10 @@
+
 .app {
   height: 100vh;
+
+  &.hidden {
+    display: none;
+  }
 
   .sections {
     width: 100%;
