@@ -14,7 +14,6 @@ import tesla from "./company/tesla.png";
 
 
 import down from "./icons/down.png";
-import shake from "./icons/shake.svg";
 import rightArrow from "./icons/right-arrow.png";
 import live from "./icons/live.png";
 
@@ -22,7 +21,6 @@ import live from "./icons/live.png";
 export {
   cv,
   rightArrow,
-  shake,
   github,
   down,
   close,

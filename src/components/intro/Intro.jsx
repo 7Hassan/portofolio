@@ -5,6 +5,7 @@ import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-i
 import { useEffect, useRef, useState } from "react";
 import { down, man, cv } from "../../assets"
 import { info } from "../../db/info";
+
 export default function Intro() {
   const textRef = useRef();
   const [text, setText] = useState(true);
@@ -56,7 +57,7 @@ export default function Intro() {
             </div>
           </div>
         </div>
-        <a href="#projects" className="projects">
+        <a href="#about" className="projects">
           <img src={down} alt="image"  loading="lazy" />
         </a>
       </div>

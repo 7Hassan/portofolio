@@ -11,16 +11,11 @@ export const certificates = [
     url: 'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8be4fe61-db8b-4449-ab9c-09a0325c379d.svg',
     desc: 'certificate'
   },
-  {
-    name: 'React: Design Patterns',
-    url: 'https://media.licdn.com/dms/image/D4E22AQHPYyQl3ElF3g/feedshare-shrink_1280/0/1690719335843?e=1698278400&v=beta&t=Ozwxlapzus_tU4LHomVXkW5_RIKilyl91WbjAeA17jg',
-    desc: 'certificate'
-  },
-  {
-    name: 'Build Production-Ready Apps in React',
-    url: 'https://media.licdn.com/dms/image/D4E22AQE0mHLE7lcleg/feedshare-shrink_1280/0/1688749823842?e=1698278400&v=beta&t=R_moQmjsjI53K_gGrkh_lyCqC0_uOz76HX9sryUUNLQ',
-    desc: 'certificate'
-  },
+  // {
+  //   name: 'React: Design Patterns',
+  //   url: 'https://media.licdn.com/dms/image/D4E22AQHPYyQl3ElF3g/feedshare-shrink_1280/0/1690719335843?e=1698278400&v=beta&t=Ozwxlapzus_tU4LHomVXkW5_RIKilyl91WbjAeA17jg',
+  //   desc: 'certificate'
+  // },
   {
     name: 'Networking Foundations: Networking Basics',
     url: 'https://firebasestorage.googleapis.com/v0/b/portfolio-ae31d.appspot.com/o/Certificates%2Fnetwork.svg?alt=media&token=c71c8bd2-6fee-442e-8bcb-9300368d7248',

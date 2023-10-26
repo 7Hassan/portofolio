@@ -6,7 +6,7 @@ import { certificates } from "../../db/certificates";
 export default function Certificates() {
   const [certificate, setCertificate] = useState(certificates[0])
 
-  return <div className="certificates w-[100%]"  id="certificates">
+  return <div className="certificates w-[100%]" id="certificates">
     <h1 className="head-sec">Certificates</h1>
     <div className="certificates-container">
       <div className="info">
@@ -24,8 +24,7 @@ export default function Certificates() {
                   <div className={`item ${cert.name === certificate.name && 'show'}`}
                     key={cert.url}
                     onClick={() => { setCertificate(cert) }}>
-                    {/* style={{ backgroundImage: `url(${cert.url})` }}> */}
-                    <img src={cert.url} alt="" />
+                    <img src={cert.url} alt="certificate" />
                   </div>
                 )
               })

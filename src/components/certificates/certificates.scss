@@ -1,5 +1,6 @@
+@import "../../global.scss";
+
 .certificates {
-  height: 100vh;
   padding: 0 10px;
 
   .info {
@@ -10,7 +11,6 @@
 
     .title {
       max-width: 800px;
-
       margin: 0 auto 30px;
 
       h2 {
@@ -21,14 +21,18 @@
     }
 
     .imgs-container {
-      $maxWidth: 600px;
+      $maxWidth: 700px;
       $width: 120px;
-      // $height: calc($width - 30px);
+      height: 80vh;
+
+      @include mobile {
+        // $width: 60px;
+        // height: 50vh;
+      }
+
       margin: auto;
       position: relative;
       max-width: calc($maxWidth + $width + 20px);
-      height: 60vh;
-      padding: 50px;
 
       #slide {
         .item {

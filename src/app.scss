@@ -13,7 +13,7 @@
     top: 70px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    scrollbar-width: none; //for firefox
+    scrollbar-width: none; 
 
     &::-webkit-scrollbar {
       display: none;
@@ -21,8 +21,24 @@
 
     >* {
       width: 100vw;
-      // height: calc(100vh - 70px);
       scroll-snap-align: start;
     }
   }
+}
+
+.my-custom-toast{
+  border-radius: 12px;
+  height: 50px;
+  button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    right: 7px;
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
 }

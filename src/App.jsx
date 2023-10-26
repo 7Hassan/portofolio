@@ -8,6 +8,8 @@ import Experience from "./components/experience/experience";
 import Tech from "./components/techs/Tech";
 import About from "./components/about/about";
 import Certificates from "./components/certificates/certificates";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./app.scss";
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
     <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     <div className="sections">
+      <ToastContainer />
       <Intro />
       <About />
       <Portfolio />
